@@ -389,7 +389,7 @@ a.Button {
 }
 
 #analise_de_auto .serviceDetailsHeader {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/consulta_veicular_fh.jpg");
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner01.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -865,7 +865,7 @@ footer .footerBrand {
 }
 
 #aboutUsHeader {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url('../images/sobre_nos.png');
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url('../images/sobre_nos.jpg');
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -965,7 +965,7 @@ footer .footerBrand {
 }
 
 .PriceCard:hover {
-    border-color: var(--primary-color);
+    border-color: var(--secondary-color);
     transform: translateY(-10px);
 }
 
@@ -976,7 +976,7 @@ footer .footerBrand {
 
 .PriceCard .value {
     font-size: 2rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
@@ -987,7 +987,7 @@ footer .footerBrand {
     font-size: 20px;
     line-height: 25px;
     padding: 5px 10px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -1006,7 +1006,7 @@ footer .footerBrand {
 
 .service .itemTitle {
     font-weight: 600;
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 4px solid var(--primary-color);
     padding: 10px 0;
     text-align: center;
 }
@@ -1109,7 +1109,7 @@ footer .footerBrand {
 
 .contactUsHeader {
     background: var(--primary-color);
-    background-image: linear-gradient(rgba(29, 29, 36, 0.5), rgb(29, 29, 36)), url("../images/contato.png");
+    background-image: linear-gradient(rgba(29, 29, 36, 0.5), rgb(29, 29, 36)), url("../images/contato.jpg");
     background-position: 50% 10%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -1231,7 +1231,7 @@ footer .footerBrand {
     display: flex;
     flex-direction: column;
     border: 4px solid #212529;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     transition: border-color .3s ease, transform .3s ease;
 }
 
@@ -1265,7 +1265,7 @@ footer .footerBrand {
     color: #fff;
     font-size: 1.8rem;
     padding-bottom: 5px;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .BusinessModelCard ul.cardItems {
@@ -1426,7 +1426,7 @@ footer .footerBrand {
 /* Análise de crédito */
 
 #analise_de_credito .serviceDetailsHeader {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/analise_de_credito.png");
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner02.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -1860,7 +1860,7 @@ footer .footerBrand {
 /* Recuperação de recebíveis */
 
 #recuperacao_de_recebiveis .serviceDetailsHeader {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/recuperacao_de_recebiveis.png");
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/banner/banner03.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -2052,7 +2052,7 @@ footer .footerBrand {
 /* Protesto de Títulos */
 
 #protesto_de_titulos .serviceDetailsHeader {
-    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/protesto_de_titulos.png");
+    background-image: linear-gradient(rgba(29, 29, 36, 0.85), rgba(29, 29, 36, 0.85)), url("../images/protesto_de_titulos.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -3259,6 +3259,16 @@ footer .footerBrand {
 
 .SectionScroller .sectionNav .sectionNavLink.active {
     background: var(--primary-color);
+}
+
+/* Texto */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
 }
 
 /* Section Scroller */
