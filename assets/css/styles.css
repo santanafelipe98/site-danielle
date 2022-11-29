@@ -778,8 +778,7 @@ footer .footerBrand {
 /* Nossos valiosos clientes */
 
 .OurCustomers {
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     min-height: 200px;
     position: relative;
 }
@@ -839,6 +838,122 @@ footer .footerBrand {
 
 .CustomerSlider .slick-slide {
     margin: 0 10px;
+}
+
+#Testimonials {
+    padding: 50px 0;
+    background: #f8f9fb;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#Testimonials .Divider {
+    margin-bottom: 20px;
+}
+
+.testimonialContainer {
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .01);
+    color: #666;
+    line-height: 1.8;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.slide-controls {
+    margin-top: 50px;
+    display: flex;
+}
+
+.testimonialSlide {
+    overflow: hidden;
+    position: relative;
+    min-height: 300px;
+}
+
+.testimonialWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .5s ease;
+}
+
+.testimonialWrapper:not(:last-child){
+    margin-right: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #d5d5d5;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color .3s ease, background .3s ease;
+}
+
+.slide-controls .dot:not(:last-child) {
+    margin-right: 20px;
+}
+
+.dot:hover {
+    border-color: var(--info-color);
+}
+
+.dot.active {
+    background: var(--info-color);
+}
+
+.textLg {
+    font-size: 32px;
+}
+
+.testimonialContainer::after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: 36px;
+    bottom: -19px;
+}
+
+.testimonialAuthor {
+    display: flex;
+    align-items: center;
+}
+
+.testimonialAuthorAvatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.testimonialAuthorAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonialAuthorName {
+    font-weight: bold;
+    color: #494e5f;
+    font-size: 18px;
+}
+
+.testimonialAuthorRole {
+    color: #bbbfc8;
 }
 
 /* Nossos valiosos clientes */
@@ -3384,6 +3499,31 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 991.8px) {
+    .testimonialSlide {
+        margin-top: 30px;
+    }
+
+    #Testimonials {
+        text-align: center;
+    }
+
+    #Testimonials .Divider {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .testimonialContainer::after {
+        left: calc(50% - 5px);
+    }
+
+    .testimonialAuthor {
+        justify-content: center;
+    }
+
+    .slide-controls {
+        justify-content: center;
+    }
+
     #contratar #planRow {
         display: flex;
         flex-direction: column-reverse;
@@ -3559,6 +3699,10 @@ footer .footerBrand {
 @media screen and (max-width: 767.8px) {
     #banner_promocional .counter {
         bottom: -230px;
+    }
+
+    .testimonialSlide{
+        min-height: 350px;
     }
 
     .Jumbotron .heading {
@@ -3744,6 +3888,8 @@ footer .footerBrand {
 }
 
 @media screen and (max-width: 439.8px) {
+    
+
     .SocialResponsibility .Content {
         width: 350px;
         left: calc(50% - 175px);
@@ -3763,6 +3909,8 @@ footer .footerBrand {
         height: 56px;
         font-size: 36px;
     }
+
+    
 
     .time-desc {
         font-size: 12px;
