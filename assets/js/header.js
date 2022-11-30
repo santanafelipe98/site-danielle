@@ -21,7 +21,7 @@ function menuOpacity() {
     let top =  $(window).scrollTop();
     let alpha = Math.min(300, top / 300);
 
-    navbar.css('background-color', `rgb(36, 53, 140, ${alpha})`);
+    navbar.css('background-color', `rgb(0, 0, 0, ${alpha})`);
 }
 
 $(window).on('scroll', menuOpacity);

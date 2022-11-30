@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #f67300;
-  --secondary-color: #24358c;
+  --secondary-color: #000;
   --danger-color: #ff3548;
   --success-color: #01c851;
   --warning-color: #ffbb34;
@@ -139,7 +139,7 @@ body {
 }
 
 .Header .brand img {
-    width: 110px;
+    width: 150px;
 }
 
 
@@ -191,7 +191,7 @@ a.Button {
 }
 
 .buttonDefault {
-    border: 2px solid #f8f9fa;
+    border: 2px solid var(--primary-color);
     color: #fff;
 }
 
@@ -466,21 +466,6 @@ img.d-block.w-100 {width: 100%;}
     padding-left: 10px;
 }
 
-footer {
-    min-height: 100px;
-    background: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 footer address {
     color: #fff;
     text-align: center;
@@ -488,13 +473,8 @@ footer address {
     margin-top: 20px;
 }
 
-footer .SocialMedia {
-    justify-content: center;
-    margin-left: calc(50% - 200px);
-}
-
 footer .footerBrand {
-    width: 160px;
+    width: 250px;
 }
 
 .SocialMedia .SocialButton:not(:last-child) {
@@ -985,6 +965,29 @@ footer .footerBrand {
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, fixed;
+}
+
+#aboutUsImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.aboutUsText {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.aboutUsText h2 {
+    font-size: 32px;
+}
+
+.aboutUsText p {
+    text-align: justify;
+}
+
+#aboutUsImg img {
+    width: 100%;
 }
 
 /* Sobre nós */
@@ -1745,7 +1748,7 @@ footer .footerBrand {
 }
 
 .BannerHubi9 .logo {
-    width: 150px;
+    width: 250px;
     margin-top: 150px;
     margin-bottom: 25px;
 }
@@ -2138,7 +2141,7 @@ footer .footerBrand {
 }
 
 .SectionList.light .sectionTitle {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .SectionList.dark .sectionTitle, .SectionList.dark .sectionDescription {
@@ -2726,13 +2729,13 @@ footer .footerBrand {
     color: #f8f9fa;
 }
 .Section .sectionTitle.light {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .Divider {
     width: 33%;
     height: 8px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin-bottom: 16px;
 }
 
@@ -3384,6 +3387,45 @@ footer .footerBrand {
 
 .text-secondary {
     color: var(--secondary-color);
+}
+
+footer {
+    min-height: 100px;
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+footer hr {
+    margin: 50px 0;
+    border-bottom: 1px solid #333;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavLink {
+    padding: 5px;
+    color: #fff;
+    transition: color .3s ease;
+}
+
+.footerNavLink:hover {
+    color: var(--primary-color);
+}
+
+footer address {
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 20px;
+    line-height: 1.8;
 }
 
 /* Section Scroller */
