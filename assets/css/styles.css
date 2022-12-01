@@ -139,7 +139,7 @@ body {
 }
 
 .Header .brand img {
-    width: 150px;
+    width: 120px;
 }
 
 
@@ -1687,10 +1687,24 @@ footer .footerBrand {
     color: var(--primary-color);
 }
 
+#vantagens_analise_auto {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url('../images/consulta_veicular_vantagens.png');
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: -2% 100%;
+    
+}
+
 #vantagens_analise_de_credito {
     padding-top: 50px;
     padding-bottom: 150px;
     position: relative;
+    background-image: url('../images/vantagens_analise_de_risco.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -10% 100%;
 }
 
 #vantagens_analise_de_credito .header {
@@ -2422,8 +2436,9 @@ footer .footerBrand {
 #vantagens_solucoes_em_pagamento .image {
     display: flex;
     justify-content: center;
-    height: 100%;
+    width: 100%;
     position: relative;
+    margin: 50px 0;
 }
 #vantagens_solucoes_em_pagamento .heading {
     display: flex;
@@ -2439,6 +2454,7 @@ footer .footerBrand {
 
 #vantagens_solucoes_em_pagamento .image img {
     width: 100%;
+    object-fit: cover;
 }
 
 .solutionTitle {
@@ -3541,6 +3557,11 @@ footer address {
 }
 
 @media screen and (max-width: 991.8px) {
+    #vantagens_analise_auto,
+    #vantagens_analise_de_credito {
+        background-image: none;
+    }
+
     .testimonialSlide {
         margin-top: 30px;
     }
