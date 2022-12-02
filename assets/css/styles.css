@@ -1052,7 +1052,7 @@ footer .footerBrand {
 /* Nossos servicos */
 
 #nossos_servicos {
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 /* Nossos servicos */
@@ -2060,7 +2060,7 @@ footer .footerBrand {
 .StepItem .textContent h5 {
     font-size: 1.1725rem;
     line-height: 1.25;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.938rem;
 }
 
@@ -2122,7 +2122,7 @@ footer .footerBrand {
 .BenefitCard .textContent .title {
     margin-bottom: 0.5rem !important;
     font-size: 1.1725rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
@@ -2300,7 +2300,7 @@ footer .footerBrand {
 .BenefitCard .textContent .title {
     margin-bottom: 0.5rem !important;
     font-size: 1.1725rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
@@ -3557,6 +3557,11 @@ footer address {
 }
 
 @media screen and (max-width: 991.8px) {
+
+    .footerNav {
+        align-items: center;
+    }
+
     #vantagens_analise_auto,
     #vantagens_analise_de_credito {
         background-image: none;
@@ -3742,7 +3747,7 @@ footer address {
     }
 
     footer .footerBrand {
-        width: 100px;
+        width: 150px;
         margin-bottom: 50px;
     }
 }
@@ -3760,6 +3765,18 @@ footer address {
 }
 
 @media screen and (max-width: 767.8px) {
+    #Testimonials .textLg {
+        line-height: 1.5;
+    }
+
+    .slide-title {
+        font-size: 32px;
+    }
+
+    .slide-text {
+        font-size: 16px;
+    }
+
     #banner_promocional .counter {
         bottom: -230px;
     }
@@ -3882,6 +3899,16 @@ footer address {
 }
 
 @media screen and (max-width: 575.8px) {
+
+    .slide-title {
+        font-size: 24px;
+    }
+
+    .slide-text {
+        font-size: 14px;
+        padding: 50px;
+    }
+
     .StepItem .textContent h5 {
         font-size: 1rem;
     }
