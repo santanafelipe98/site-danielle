@@ -490,7 +490,7 @@ a.Button {
     height: 58px;
     border-radius: 29px;
     right: 28px;
-    bottom: 100px;
+    bottom: 20px;
     background: var(--primary-color);
     border: none;
     display: inline-flex;
